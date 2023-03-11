@@ -59,18 +59,25 @@ async def on_message(message) :
             await message.channel.send(f"감도 조절은 1 ~ 3 까지 사이의 수준으로 조정해줘! (숫자가 높을 수록 검열 강도도 up)")
     if sensivity == 1 : 
         if message.content in sensivity_1 :
-            await message.delete()
-            await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
+            for word1 in sensivity_1 :
+                if world1 in message.content
+                    await message.delete()
+                    await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
         
     elif sensivity == 2 : 
         if message.content in sensivity_2 :
-            await message.delete()
-            await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
-    
+            for word2 in sensivity_2 :
+               if word2 in message.content :
+                   await message.delete()
+                   await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
+
     elif sensivity == 3 : 
         if message.content in sensivity_3 :
-            await message.delete()
-            await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
+            for word3 in sensivity_3 :
+                if word3 in message.content :
+                    await message.delete()
+                    await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))  
+           
 
 try:
     client.run(TOKEN)
