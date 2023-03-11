@@ -60,7 +60,7 @@ async def on_message(message) :
     if sensivity == 1 : 
         if message.content in sensivity_1 :
             for word1 in sensivity_1 :
-                if world1 in message.content
+                if world1 in message.content :
                     await message.delete()
                     await message.channel.send(embed = discord.Embed(description = f"{message.author}! 감히 내 앞에서 욕을 해?", color = 0x000000))
         
