@@ -30,6 +30,13 @@ intents = discord.Intents().all()
 client = commands.Bot(command_prefix='/', intents = intents)
 sensivity = 1
 
+sensivity_1 = ['ㅆㅂ', '씨발', 'ㄱㅅㄲ', '개새끼', '니애미', '니애비', '느금마', '느금', '병신', 'ㄴㄱㅁ', 'Tlqkf', 'qudtls', 'rotoRl']
+
+sensivity_2 = ['ㅆㅂ', '씨발', 'ㄱㅅㄲ', '개새끼', '니애미', '니애비', '느금마', '느금', '병신', 'ㄴㄱㅁ', 'Tlqkf', 'qudtls', 'rotoRl', 'tlqkf', 'qud', 'rotorl', 'ㅅㅂ', 'ㅈㄹ', '지랄', '튀르이', 'ㅌㄹㅇ', '좆같', 'ㅈ같']
+
+sensivity_3 = ['ㅆㅂ', '씨발', 'ㄱㅅㄲ', 'ㄳㄲ', '개새끼', '니애미', '니애비', '느금마', '느금', '병신', 'ㄴㄱㅁ', 'Tlqkf', 'qudtls', 'rotoRl', 'tlqkf', 'qud', 'rotorl', 'ㅅㅂ', 'ㅈㄹ', '지랄', '튀르이', 'ㅌㄹㅇ', '시발', 'ㅄ', 'ㅂㅅ']
+
+
 @client.event
 async def on_ready():
      await client.change_presence(status=discord.Status.online, activity=discord.Game("난 바보가 아니야... 바보가 아니라고!"))
