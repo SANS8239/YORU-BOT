@@ -15,9 +15,6 @@ from discord.utils import get
 from discord import FFmpegPCMAudio
 from random import *
 import urllib.request
-from datetime import datetime
-import hanja
-from hanja import hangul
 import requests
 import os
 import subprocess
